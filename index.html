@@ -15,38 +15,48 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>New York</h1>
-        <ul>
-          <li>Wednesday 2:30 PM</li>
-          <li>Clear Skies</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="cloudy icon"
-            />
-            12 °C | °F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>New York</h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 0%</li>
-              <li>Wind Speed: 0</li>
+              <li>Wednesday 2:30 PM</li>
+              <li>Clear Skies</li>
             </ul>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="cloudy icon"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong>12</strong>
+                  <span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 0%</li>
+                <li>Wind Speed: 0</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/Moremirmir/Vanilla2-Weather-App"
+            target="_blank"
+          >
+            Open-source code
+          </a>
+          by Miriam DaSilva
+        </small>
       </div>
-      <small>
-        <a
-          href="https://github.com/Moremirmir/Vanilla2-Weather-App"
-          target="_blank"
-        >
-          Open-source code
-        </a>
-        by Miriam DaSilva
-      </small>
     </div>
     <script src="app.js"></script>
   </body>
