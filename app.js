@@ -30,10 +30,8 @@ function formatDay(timestamp) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "593287cf4f1cc530b1581ded06364a64";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
